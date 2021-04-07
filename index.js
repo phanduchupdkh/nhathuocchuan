@@ -99,6 +99,6 @@ app.use('/hethongnt', hethongntRouter);
 app.use('/hethongcty', hethongctyRouter);
 
 app.use('/kenhnhathuoc', authMiddleware.requireAuth, kenhnhathuocRouter);
-app.listen(process.env.PORT || 3000, function () {
-	console.log('Server listening on port 3000');
+app.listen(process.env.PORT || 3001, function () {
+	console.log('Server listening on port 3001');
 });
