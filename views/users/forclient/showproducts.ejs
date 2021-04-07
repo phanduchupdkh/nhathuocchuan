@@ -37,7 +37,8 @@
             		if (item.linkhinh !== "https://file.hstatic.net/1000287322/file/updating_4b3e39ad13974b06bd99d80bb44a2218.png") {linkhinh = item.linkhinh};
             		%>
 					<div class="col-4 col-sm-3 col-md-2 border border-muted">
-		        		<a href="/nhathuoc/<%=nhathuoc.idnt%>/<%=item.url%>"><img src="<%=linkhinh%>" alt="<%=item.tensanpham%>" style='width: 100%'>
+		        		<a href="/nhathuoc/<%=nhathuoc.idnt%>/<%=item.url%>">
+							<!-- <img src="<%=linkhinh%>" alt="<%=item.tensanpham%>" style='width: 100%'> -->
 		       			<p> <%=item.tensanpham%> </p></a>
 		       			<p>Giá Bán: <%=item.giaban.slice(0,-3).concat(".",item.giaban.slice(-3))%>đ </p>
 		       			<form action="/cart/add" method="POST">
